@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.example.dell.srt_project.Menu">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        >
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back"
+            android:src="@drawable/fh"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="语速音量"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:id="@+id/tv_title"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="语速"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/ys"/>
+
+    <SeekBar
+        android:id="@+id/ys_bar"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#bab8b8"
+        android:max="100"
+        android:progress="50" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="音量"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"
+        android:textColor="#000"
+        android:id="@+id/yl"/>
+
+    <SeekBar
+        android:id="@+id/yl_bar"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="30dp"
+        android:background="#bab8b8"
+        android:max="100"
+        android:progress="50" />
+
+    <Button
+        android:id="@+id/czys"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="重置语速"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/czyl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="重置音量"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/stsl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="收听示例"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="默认语言状态：使用系统语言"
+        android:textSize="20dp"
+        android:id="@+id/morenyy"/>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dell.srt_project.Menu">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="首页"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:id="@+id/tv_title"
+            />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/lv"
+        android:layout_width="300dp"
+        android:layout_height="111dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_lv"
+        android:drawableTop="@drawable/ldy4"
+        android:text="朗读员"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/blue"
+        android:layout_width="300dp"
+        android:layout_height="113dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_red"
+        android:drawableTop="@drawable/ysyd1"
+        android:text="语速音量"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/red"
+        android:layout_width="300dp"
+        android:layout_height="111dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_blue"
+        android:drawableTop="@drawable/yysz1"
+        android:text="语言设置"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/help"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/wh"
+        android:background="#ffffff"
+        android:text="帮助"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+</LinearLayout>
